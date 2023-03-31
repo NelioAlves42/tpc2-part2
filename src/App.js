@@ -25,7 +25,7 @@ function App() {
       return;
     }
 
-    if (numAbsences > 30) {
+    if (numAbsences > 30 || numAbsences < 1) {
       setErrorMessage('wrongAbsence');
       return;
     }
